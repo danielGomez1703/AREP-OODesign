@@ -17,22 +17,43 @@ import java.util.ListIterator;
  *
  * @author danip
  */
-public class LinkedListImp <E> implements List<E>, Cloneable, Serializable {
-   Node head;
-   
-   public boolean add (E value){
+public class LinkedListImp <E> implements List<E>, Serializable {
+   Node<E> head;
+   Node actual;
+   int size;
+   /**
+    * Agrega un elemento nuevo a la lista
+    * @param value
+    * @return false si no agrega con exito
+    */
+   public LinkedListImp (){
+       size = 0;
+   }
+   @Override
+   public boolean add (E value)
+   {    
+       Node<E> newNode = new Node<>(value);
        if (head != null){
-           Node last = head;
-           while (last !=null){
-              last=last.next;
+          
+            Node last = head;
+            
+           while (last.next !=null){
+              last=last.next;       
            }
-           last.next = new Node(value);
+           last.next = newNode;
        }else{
            head= new Node(value);
+           actual=head;
        }
+       size++;
+       
      return true;
    }
-   
+   /**
+    *  remueve un objeto de la lInked list
+    * @param value
+    * @return retorna un booleano en caso de fallo o error en 
+    */
    public boolean remove (Object value){
        if (head != null){
            Node last = head;
@@ -57,13 +78,24 @@ public class LinkedListImp <E> implements List<E>, Cloneable, Serializable {
        Node last = head;
        while (last !=null){
              r+=" "+last.toString();
+             last=last.next;
            }
        return r;
+   }
+   
+   /** 
+    * Next retorna el Nodo siguiente en la lista al llegar al final volvera al head, com si fuera circular 
+    * @return  Node  siguiente nodo.
+    */
+   public Node Next(){
+      actual =actual.next;
+      return actual;
+       
    }
 
     @Override
     public int size() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return size;
     }
 
     @Override
@@ -123,7 +155,18 @@ public class LinkedListImp <E> implements List<E>, Cloneable, Serializable {
 
     @Override
     public E get(int index) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if((index<0 && index>=size)){
+            throw new IndexOutOfBoundsException();
+
+        }else{
+            Node<E> nd = head;
+            for (int i=0 ; i<index; i++){
+                nd=nd.next;
+                
+            } 
+            return nd.value;
+        }
+        
     }
 
     @Override
@@ -136,10 +179,6 @@ public class LinkedListImp <E> implements List<E>, Cloneable, Serializable {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
-    public E remove(int index) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     @Override
     public int indexOf(Object o) {
@@ -166,5 +205,9 @@ public class LinkedListImp <E> implements List<E>, Cloneable, Serializable {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    @Override
+    public E remove(int index) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

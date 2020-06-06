@@ -15,12 +15,17 @@ public  class Node<E>
     
     public  E value;
     public Node next;
+    
     public Node( E val){
         value=val;
-        this.next =null;
+        next =null;
     }
     
+   public Object getValue(){
+       return value;
+   }
    public String toString(){
        return value.toString();
    }
+   
 }
