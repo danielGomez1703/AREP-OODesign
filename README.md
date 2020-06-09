@@ -4,11 +4,11 @@ estos datos deben cargarse a la ruta  dispuesta para ello.
  
   - media= La media se calcula como un promedio, siendo la suma y la division de la cantidad de datos.
         
-        $$\sum_{i=1}ˆn x_i$$
+      ![media](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/media.JPG)
         
   - LOC = esta forma cuenta e imprime unicamente las lineas de codigo, ignorando comentarios y espacios
        
-        $$\sum_{i=1}ˆn (x_i -media) $$
+      ![desviacion](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/desviacion.JPG)
 
 ## requsites
     -java version 1.7+
