@@ -8,7 +8,7 @@ package edu.escuelaing.arsw.container;
 /**
  *
  * @author danip
- * @param <E>
+ * @param <E> describe el tipo que entra al nodo
  */
 public  class Node<E>
 {

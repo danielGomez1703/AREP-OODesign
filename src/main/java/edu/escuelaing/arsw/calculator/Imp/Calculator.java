@@ -19,7 +19,7 @@ public class Calculator {
    
     /**
      * Calcula la media de los datos recibidos
-     * @param lk
+     * @param lk recibe la lista con los datos obtenidos
      * @return  media de los datos
      */
     public Double media(List<Double> lk){

@@ -21,14 +21,15 @@ public class LinkedListImp <E> implements List<E>, Serializable {
    Node<E> head;
    Node actual;
    int size;
-   /**
-    * Agrega un elemento nuevo a la lista
-    * @param value
-    * @return false si no agrega con exito
-    */
+
    public LinkedListImp (){
        size = 0;
    }
+    /**
+     * Agrega un elemento nuevo a la lista
+     * @param value  valor del nodo
+     * @return false si no agrega con exito
+     */
    @Override
    public boolean add (E value)
    {    
@@ -51,7 +52,7 @@ public class LinkedListImp <E> implements List<E>, Serializable {
    }
    /**
     *  remueve un objeto de la lInked list
-    * @param value
+    * @param value valor del nodo
     * @return retorna un booleano en caso de fallo o error en 
     */
    public boolean remove (Object value){
