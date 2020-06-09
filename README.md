@@ -30,7 +30,7 @@ $ mvn package
 
     
 ## Modelo
-![Modelo](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/Model.png)
+![Modelo](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/Model.JPG)
 
     Este modelo describe la interaccion del programa a nivel de sus componentes. en el modelo destacan **calculator** y el **LinkedList**
     el contendor es un implementacion propia de una lista en base a la implementacion LIST de java.
@@ -67,15 +67,15 @@ $ mvn package
 ## Reporte Pruebas
 El estado de actual de las pruebas son correctas las 2 que se hacen.
 
-![pruebasInp](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/BuildSuccesTest.jpg)
+![pruebasInp](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/BuildSuccesTest.JPG)
 
 estos son los dos archivos de prueba del programa.
 
-![pruebasInp](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/InpuTest.jpg)
+![pruebasInp](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/InpuTest.JPG)
 
 Los resultados de las pruebas son los esperados con los de la guia.
 
-![pruebasResult](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/ResulTest.jpg)
+![pruebasResult](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/ResulTest.JPG)
 
 ## Descripion
  Este programa consiste en una claculadora en principio con dos funciones estadisticas base como:
