@@ -90,8 +90,10 @@ Los resultados de las pruebas son los esperados con los de la guia.
  
  el programa se compone de dos objetos clave la cual es la calculadora y la lista encadenada LINKEDLIST.
  
-##Reporte
+## Reporte
+
 para consultar el reporte debe acceder al link 
+
 [reporte de laboratorio](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/Design_OO.pdf)
 
 ## Author
