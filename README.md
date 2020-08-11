@@ -89,9 +89,13 @@ Los resultados de las pruebas son los esperados con los de la guia.
  depues de obtener los datos, procede directamente a realizar las operaciones estadisticas ya mencionadas. 
  
  el programa se compone de dos objetos clave la cual es la calculadora y la lista encadenada LINKEDLIST.
+ 
+##Reporte
+para consultar el reporte debe acceder al link 
+[reporte de laboratorio](https://github.com/danielGomez1703/ARSW-OODesign/blob/master/resources/Design_OO.pdf)
 
 ## Author
-    Daniel Felipe Gomez Suarez
+    Daniel Felipe Gomez Suarez [danielgomez1703](https://github.com/danielGomez1703)
     
 ## BUILT IN
    Proyecto construido en [Maven](https://maven.apache.org/)
