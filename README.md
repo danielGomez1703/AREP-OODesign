@@ -38,7 +38,8 @@ $ mvn package
     
     
 
-##Pruebas Unitarias
+## Pruebas Unitarias
+
  estas son las pruebas que ejecuta la clase de pruebas del Programa. datos dados en la guia de trabajo con sus resultados esperados  
  ````
      private final String Ftest1 = "resources/test1.txt";
