@@ -16,8 +16,8 @@ estos datos deben cargarse a la ruta  dispuesta para ello.
 
 ## Installation
  ```sh
-$ git pull https://github.com/danielGomez1703/ARSW-OODesign
-$ cd ARSW-OODesign
+$ git pull https://github.com/danielGomez1703/AREP-OODesign
+$ cd AREP-OODesign
 $ mvn package
 ```
 
