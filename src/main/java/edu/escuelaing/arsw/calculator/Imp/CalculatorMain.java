@@ -26,15 +26,16 @@ public class CalculatorMain {
         // interfaz funcional 
         
         // operation with function 
-        EstadisticOp media = (d) -> calculator.media(d);
+        EstadisticOp media = (x) -> calculator.media(x);
         // operation with 
-        EstadisticOp desviacion = (d) -> {
-            Double mean = Calculator.StatOperation(d, media);
+        EstadisticOp desviacion = (x) -> {
+            System.out.println(x.toString());
+            Double mean = Calculator.StatOperation(x, media);
             Double desv = 0.0;
-            for (int i = 0; i < d.size(); i++) {
-                desv += Math.pow(d.get(i) - mean, 2);
+            for (int i = 0; i < x.size(); i++) {
+                desv += Math.pow(x.get(i) - mean, 2);
             }
-            return Math.sqrt(desv /(d.size()-1));
+            return Math.sqrt(desv /(x.size()-1));
         };
 
         Double mean = calculator.StatOperation(datos, media);
